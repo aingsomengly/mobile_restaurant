@@ -1,0 +1,60 @@
+.ios, .md, .wp{
+    
+    #content{
+        // -webkit-filter: blur(20px);
+        // -moz-filter: blur(20px);
+        // -o-filter: blur(20px);
+        // -ms-filter: blur(20px);
+        // filter: blur(20px);
+        // background: none;
+        // opacity: 0.7;
+    }
+    .profile{
+        margin: 10px; 
+    }
+    .name{
+        margin-left: 10px;
+    }
+    .name1{
+        margin-left: 10px;
+        margin-top: -20px;
+    }
+    ion-list{
+        padding-top: 10px;
+    }
+    .imgs{
+        z-index: 0;
+        height: 60px; 
+        width: 60px; 
+        border-radius: 80%;
+        // box-shadow: 0 0 5px gray;
+        margin-left: 10px;
+        margin-top: 30px;
+        // margin-right: auto;
+    }
+
+    .bg{
+        background-image: url('../assets/img/angkor-wat.jpg');
+        // background: url('../../img/getstart.png');
+        background-repeat: no-repeat;
+        background-size:cover;        
+    }
+
+    .btn{
+        width: 94%;
+        height: 30px;
+        // padding: 3px -5px;
+        margin: 0px 10px;
+        border-radius: 5px;
+    }
+    
+    .activeHighlight{
+        background-color: map-get($colors, light)
+    }
+}
+.ios{
+    
+}
+.md{
+    
+}

@@ -1,0 +1,42 @@
+<ion-header>
+  
+    <ion-navbar color="primary">
+      <ion-title>
+          {{littlekh.title}}  
+      </ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  <!-- <ion-spinner *ngIf="littlekh == 0">
+  </ion-spinner> -->
+  <ion-content *ngIf="littlekh != 0">
+    <ion-card>
+      <img src="{{littlekh.picture}}">
+      <ion-fab right top>
+        <button ion-fab>
+          <ion-icon name="pin"></ion-icon>
+        </button>
+      </ion-fab>
+    
+      <ion-card-content>
+        <ion-card-title>
+          Nine Inch Nails Live
+          </ion-card-title>
+        <p>
+            {{littlekh.description}}
+        </p>
+      </ion-card-content>
+    
+      <ion-item>
+        <span item-left>Price: ${{littlekh.price}}</span>
+      <button ion-button icon-left clear item-end>
+          <ion-icon name="navigate"></ion-icon>
+          Booking Now
+        </button>
+      </ion-item>
+    
+    </ion-card>
+  
+  
+  </ion-content>

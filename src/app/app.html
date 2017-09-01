@@ -1,0 +1,36 @@
+
+<ion-menu align="right" [content]="content">
+    <ion-header>    
+      <div class="bg">
+        <ion-grid>
+          <ion-row>
+              <img class="imgs" src="assets/img/default-avatar.png">
+          </ion-row>
+        </ion-grid>
+
+        <ion-grid>
+          <ion-row class="name">
+            
+                <p style="color:white;">Aing Somengly</p>
+          </ion-row>
+          <ion-row class="name1"> 
+                <p style="color:white;">aingsomengly@gmail.com</p>
+          </ion-row>
+        </ion-grid> 
+  
+        </div> 
+    </ion-header>
+
+  <ion-content>
+    <ion-list no-lines>
+      <button class="btn" [class.activehighlight]="checkActive(p)" menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        <ion-icon [name]="p.icon" item-left></ion-icon> {{p.title}}
+      </button>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+
+  

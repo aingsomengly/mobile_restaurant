@@ -1,0 +1,82 @@
+
+<ion-header>
+  <ion-navbar color="primary">
+     <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button> 
+    <ion-title>Home</ion-title>
+
+    
+  </ion-navbar>
+  
+</ion-header>
+
+<ion-content class="card-background-page" color="backg">
+
+  <ion-row>
+    <ion-col>
+      <div></div>
+    </ion-col>
+    <ion-col col-12>
+      <div id="center">
+        <ion-title>Welcome</ion-title>
+      </div>
+    </ion-col>
+    <ion-col>
+      <div></div>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <div></div>
+    </ion-col>
+    <ion-col col-8>
+      <ion-card >
+        <div [navPush]="asiansgPage">
+          <img src="assets/img/asiansg.jpg">
+        </div>
+      </ion-card>
+      
+    </ion-col>
+    <ion-col>
+      <div></div>
+    </ion-col>
+  </ion-row>
+
+
+  <ion-row>
+    <ion-col>
+        <ion-card>
+            <div [navPush]="asiansPage">
+              <img src="assets/img/asians.jpg">
+            </div>         
+        </ion-card>
+    </ion-col>
+    <ion-col col-4>
+        <ion-card>
+          <div [navPush]="littlekhPage">
+            <img src="assets/img/khmer-cuisine.jpg">
+          </div>
+        </ion-card>
+    </ion-col>
+    <ion-col>
+      <div>
+        <ion-card>
+          <div [navPush]="jayaPage">          
+            <img src="assets/img/jaya.jpg"/>
+          </div>
+        </ion-card>
+      </div>
+        
+    </ion-col>
+  </ion-row>
+  <ion-card>
+     <ion-item>
+      <h2>E: sales@asiansquaregroup.com</h2>
+      <h2>T: (855) 63 767 797 </h2>
+      <h2>F: (855) 63 767 798</h2>
+      <p> 7 Makara Street, Wat Bo Village,</p><p> Siem Reap Kingdom of Cambodia</p>
+    </ion-item>
+  </ion-card>
+
+</ion-content>
